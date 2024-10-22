@@ -8,7 +8,7 @@ import Btn from './Btn';
 const Login = props => {
   return (
     <Background>
-      <View style={{alignItems: 'center', width: 460}}>
+      <View style={{alignItems: 'center', width: 430}}>
         <Text
           style={{
             color: 'white',
@@ -23,7 +23,6 @@ const Login = props => {
             backgroundColor: 'white',
             height: 770,
             width: 460,
-            borderTopLeftRadius: 130,
             paddingTop: 100,
             alignItems: 'center',
           }}>
@@ -40,10 +39,10 @@ const Login = props => {
             Login to your account
           </Text>
           <Field
-            placeholder="Email / Username"
+            placeholder="Email/Username"
             keyboardType={'email-address'}
           />
-          <Field placeholder="Email / Username" secureTextEntry={true} />
+          <Field placeholder="Password" secureTextEntry={true} />
           <View
             style={{
               alignItems: 'flex-end',

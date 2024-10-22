@@ -8,7 +8,7 @@ import Btn from './Btn';
 const Signup = props => {
   return (
     <Background>
-      <View style={{alignItems: 'center', width: 460}}>
+      <View style={{alignItems: 'center', width: 430}}>
         <Text
           style={{
             color: 'white',
@@ -32,31 +32,46 @@ const Signup = props => {
           style={{
             backgroundColor: 'white',
             height: 770,
-            width: 460,
-            borderTopLeftRadius: 130,
-            paddingTop: 100,
+            width: '100%',
+            paddingTop: 50,
             alignItems: 'center',
           }}>
           <Field placeholder="First name" />
           <Field placeholder="Last name" />
-          <Field
-            placeholder="Email / Username"
-            keyboardType={'email-address'}
-          />
+          <Field placeholder="Email/Username" keyboardType={'email-address'} />
           <Field placeholder="Contact Number" keyboardType={'number'} />
           <Field placeholder="Password" secureTextEntry={true} />
           <Field placeholder="Confirm Password" secureTextEntry={true} />
-          {/* <View
+          <View
             style={{
-              alignItems: 'flex-end',
+              display: 'flex',
+              flexDirection: 'row',
               width: '78%',
-              paddingRight: 16,
-              marginBottom: 200,
+              fontWeight: 'bold',
+              fontSize: 16,
             }}>
-            <Text style={{color: darkGreen, fontWeight: 'bold', fontSize: 16}}>
-              Forgot Password?
+            <Text style={{color: 'grey', fontSize: 16}}>
+              By Signin in, you are agree to our{' '}
             </Text>
-          </View> */}
+            <Text style={{color: darkGreen, fontWeight: 'bold', fontSize: 16}}>
+              Terms & Conditons
+            </Text>
+          </View>
+          <View
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              width: '78%',
+              fontWeight: 'bold',
+              fontSize: 16,
+              justifyContent: 'center',
+              marginBottom: 10,
+            }}>
+            <Text style={{color: 'grey', fontSize: 16}}>and </Text>
+            <Text style={{color: darkGreen, fontWeight: 'bold', fontSize: 16}}>
+              Privecy Policy
+            </Text>
+          </View>
           <Btn
             textColor="white"
             bgColor={darkGreen}

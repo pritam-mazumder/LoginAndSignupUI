@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 import {darkGreen} from './Constants';
 
-const Field = ({props}) => {
+const Field = ({placeholder, props}) => {
   return (
     <TextInput
       {...props}
+      placeholder={placeholder}
       style={{
         borderRadius: 100,
         color: darkGreen,
